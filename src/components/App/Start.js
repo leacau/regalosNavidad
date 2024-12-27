@@ -21,6 +21,12 @@ function Start() {
 	const [playError, { stopError, isPlayingError }] = useSound(error);
 	const [playGood, { stopGood, isPlayingGood }] = useSound(good);
 
+	useEffect(() => {
+		if (!jugar) {
+			play();
+		}
+	});
+
 	const manejarRespuesta = (indice) => {
 		setRespuestaSeleccionada(indice);
 		setMostrarResultado(true);
