@@ -1,0 +1,152 @@
+.start{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.start video{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  object-fit:cover;
+  z-index: -1;
+}
+
+.startButton{
+  display: flex;
+  color: white;
+  background-color: rgb(107, 42, 42);
+  border-color:rgb(107, 42, 42) ;
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  top: 80%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: #dbcaca 5px 5px 15px;
+}
+
+.startButton:hover{
+  background-color: hwb(0 34% 23%);
+  border-color:hwb(0 34% 23%) ;
+  color: white;
+}
+
+.startButton:active{
+  box-shadow: inset #dbcaca67 5px 5px 15px;
+  border: transparent;
+}
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Fuente similar a Preguntados */
+    background-color: #ffffff; /* Fondo claro */
+    min-height: 100vh;
+    padding: 0px;
+  }
+  
+  .app h1 {
+    color: #3498db; /* Color principal de Preguntados */
+    margin-bottom: 20px;
+  }
+  .opcion {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .opcion:hover {
+    background-color: #2980b9;
+  }
+
+  .ganador h1{
+    color: #ffffff;
+    z-index: 6;
+    text-align: center;
+  }
+
+  .preguntaContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 800px; /* Ancho fijo para las preguntas */
+    text-align: center; /* Centrar el texto de la pregunta */
+  }
+  
+  .preguntaContainer h2 {
+      color: #333;
+      margin-bottom: 15px;
+  }
+  
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre botones */
+  }
+  
+  .opcion {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .opcion:hover {
+    background-color: #2980b9;
+  }
+  
+  .opcion:disabled {
+    background-color: #bdc3c7;
+    cursor: default;
+  }
+
+  .resultado {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .mensaje {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .correcto {
+      color: green;
+  }
+  
+  .incorrecto {
+      color: red;
+  }
+  
+  .siguiente {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .siguiente:hover {
+    background-color: #27ae60;
+  }

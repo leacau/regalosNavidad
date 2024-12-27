@@ -1,0 +1,80 @@
+.premioGan{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.premioGan video{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  object-fit:cover;
+  z-index: 2;
+}
+
+.premioGanButton{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: rgb(31, 14, 129);
+  border-color:transparent ;
+  height: 5vh;
+  width: 50vw;
+  bottom: 35%;
+  padding: 20px;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: #dbcaca 5px 5px 15px;
+  animation-duration: 6.5s;
+  animation-name: fadeIn;
+  left: 20%;
+  background-color: rgba(0, 255, 255, 0.39);
+
+}
+
+@media (min-width: 768px) {
+  .premioGanButton {
+    width: 53vw;
+    height: 30vh;
+    bottom: 15%;
+  }
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    left: 18.5%;
+  }
+  90% {
+    opacity: 0.5;
+    left: 19%;
+  }
+  to {
+    opacity: 1;
+    left: 20%;
+  }
+}
+
+.ganador {
+    background-color: #2ecc71; /* Verde de ganador */
+    color: white;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .premioGanButton h1 {
+    font-size: 2rem;
+
+z-index: 2;
+}
+  .premioGanButton h3 {
+    font-size: 1.5rem;
+z-index: 2;
+}
+

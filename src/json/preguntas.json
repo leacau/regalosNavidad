@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "¿Qué teorema relaciona la frecuencia de muestreo con la máxima frecuencia reproducible?",
+    "respuestas": ["Teorema de Pitágoras", "Teorema de Nyquist-Shannon", "Ley de Ohm", "Transformada de Fourier"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa DAW en el contexto de la producción musical?",
+    "respuestas": ["Digital Audio Workstation", "Digital Audio Wave", "Direct Audio Window", "Dual Audio Wireless"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de estos compositores es considerado un pionero de la música concreta?",
+    "respuestas": ["John Cage", "Pierre Schaeffer", "Karlheinz Stockhausen", "Luciano Berio"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué técnica de síntesis sonora modula la frecuencia de una onda portadora con otra onda moduladora?",
+    "respuestas": ["Síntesis Aditiva", "Síntesis Sustractiva", "Síntesis FM", "Síntesis Granular"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué es el 'aliasing' en el procesamiento de audio digital?",
+    "respuestas": ["Un efecto de reverberación" , "Un tipo de compresión de audio", "Un proceso de ecualización", "Un artefacto de muestreo que crea frecuencias no deseadas"],
+    "correcta": 3
+  },
+    {
+    "pregunta": "¿Qué tipo de micrófono es generalmente más sensible y requiere alimentación phantom?",
+    "respuestas": ["Dinámico", "De cinta", "De condensador", "Piezoeléctrico"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué significa la sigla VST en plugins de audio?",
+    "respuestas": ["Virtual Studio Technology", "Volume Sound Transfer", "Variable Signal Timing", "Visual Sound Tracker"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de estas opciones describe mejor la música acusmática?",
+    "respuestas": ["Música interpretada en vivo con instrumentos acústicos", "Música electroacústica creada para ser escuchada sin la presencia visible de intérpretes", "Música electrónica con fuertes influencias del jazz", "Música aleatoria creada con dados"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué técnica de procesamiento divide un sonido en pequeñas partículas para luego recombinarlas?",
+    "respuestas": ["Compresión", "Reverberación", "Síntesis Granular", "Ecualización"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué es la latencia en el contexto del audio digital?",
+    "respuestas": ["La duración de un sonido", "El retardo entre la entrada y la salida de una señal de audio", "El volumen de una señal", "La frecuencia de una señal"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál de estos no es un software DAW comúnmente utilizado en la composición electroacústica?",
+    "respuestas": ["Ableton Live", "Logic Pro X", "Microsoft Word", "Pro Tools"],
+    "correcta": 2
+  },
+    {
+    "pregunta": "¿Qué se entiende por 'paisaje sonoro' (soundscape)?",
+    "respuestas": ["Una composición musical con instrumentos de viento", "Un efecto de audio que simula un espacio abierto", "Una técnica de grabación con micrófonos binaurales", "El conjunto de sonidos que nos rodean en un entorno determinado"],
+    "correcta": 3
+  },
+  {
+    "pregunta": "¿Qué tipo de síntesis utiliza tablas de ondas para generar sonido?",
+    "respuestas": ["Síntesis FM", "Síntesis Sustractiva", "Síntesis Wavetable", "Síntesis Aditiva"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál de estos no es un parámetro fundamental de una onda sonora?",
+    "respuestas": ["Amplitud", "Frecuencia", "Color", "Fase"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué significa la sigla MIDI?",
+    "respuestas": ["Musical Instrument Digital Interface", "Music Input Digital Interface", "Musical Information Data Input", "Master Instrument Digital Input"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de estas técnicas implica la manipulación de grabaciones de campo?",
+    "respuestas": ["Síntesis FM", "Música Concreta", "Síntesis Aditiva", "Síntesis Sustractiva"],
+    "correcta": 1
+  },
+    {
+    "pregunta": "¿Qué implica una alta frecuencia de muestreo en la digitalización de audio?",
+    "respuestas": ["Menor calidad de audio", "Mayor resolución y rango de frecuencias audibles", "Menor tamaño de archivo", "Mayor latencia"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué efecto se produce al reproducir una señal a una frecuencia de muestreo menor a la necesaria (según Nyquist)?",
+    "respuestas": ["Reverberación", "Compresión", "Aliasing", "Distorsión"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál de estos compositores es conocido por su trabajo con música electrónica y espacialización sonora?",
+    "respuestas": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Karlheinz Stockhausen", "Johann Sebastian Bach"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué se busca lograr principalmente con la masterización de un audio?",
+    "respuestas": ["Grabar las pistas individuales", "Mezclar las pistas", "Optimizar el audio para su distribución final", "Afinar los instrumentos"],
+    "correcta": 2
+  }
+]
