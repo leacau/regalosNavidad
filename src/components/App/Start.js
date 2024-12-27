@@ -51,9 +51,9 @@ function Start() {
 			{!jugar && (
 				<div className={styles.start}>
 					<video loop autoPlay>
-						{play()}
 						<source src={startVideo} type='video/mp4'></source>
 					</video>
+					{play()}
 					<button
 						className={styles.startButton}
 						onClick={() => (setJugar(true), stop())}
