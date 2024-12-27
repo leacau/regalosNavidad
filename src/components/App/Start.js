@@ -52,7 +52,7 @@ function Start() {
 				<div className={styles.start}>
 					{play()}
 					<video autoPlay>
-						<source src={startVideo} type='video/mp4' repeat></source>
+						<source src={startVideo} type='video/mp4'></source>
 					</video>
 
 					<button
