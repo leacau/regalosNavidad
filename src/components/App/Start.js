@@ -48,10 +48,10 @@ function Start() {
 
 	return (
 		<>
+			{play()}
 			{!jugar && (
 				<div className={styles.start}>
 					<video loop autoPlay>
-						{play()}
 						<source src={startVideo} type='video/mp4'></source>
 					</video>
 
