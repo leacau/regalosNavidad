@@ -14,18 +14,30 @@ import useSound from 'use-sound';
 function Start() {
 	const [preguntaActual, setPreguntaActual] = useState(0);
 	const [jugar, setJugar] = useState(false);
+	const [start, setStart] = useState(false);
+	const [playing, setPlaying] = useState(false);
 	const [respuestasCorrectas, setRespuestasCorrectas] = useState(0);
 	const [mostrarResultado, setMostrarResultado] = useState(false);
 	const [respuestaSeleccionada, setRespuestaSeleccionada] = useState(null);
-	const [play, { stop, isPlaying }] = useSound(music);
-	const [playError, { stopError, isPlayingError }] = useSound(error);
-	const [playGood, { stopGood, isPlayingGood }] = useSound(good);
+	const [play, { stop }] = useSound(music, {
+		onload: () => {
+			setPlaying(true);
+		},
+		onend: () => {
+			setPlaying(false);
+		},
+		volume: 1,
+	});
+	const [playError] = useSound(error);
+	const [playGood] = useSound(good);
 
 	useEffect(() => {
-		if (!jugar) {
+		console.log('useEffect', playing);
+
+		if (playing) {
 			play();
 		}
-	});
+	}, [playing]);
 
 	const manejarRespuesta = (indice) => {
 		setRespuestaSeleccionada(indice);
@@ -54,9 +66,38 @@ function Start() {
 
 	return (
 		<>
-			{!jugar && (
+			{!jugar && !start && (
+				<div
+					style={{
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						height: '100vh',
+						backgroundColor: '#282c34',
+					}}
+				>
+					<button
+						onClick={() => setStart(true)}
+						style={{
+							fontSize: '2rem',
+							padding: '1rem 2rem',
+							backgroundColor: '#61dafb',
+							color: '#282c34',
+							border: 'none',
+							borderRadius: '8px',
+							cursor: 'pointer',
+							transition: 'transform 0.2s',
+						}}
+						onMouseEnter={(e) => (e.target.style.transform = 'scale(1.1)')}
+						onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+					>
+						¡Iniciar!
+					</button>
+				</div>
+			)}
+			{!jugar && start && (
 				<div className={styles.start}>
-					<video loop autoPlay>
+					<video loop autoPlay preload='auto'>
 						<source src={startVideo} type='video/mp4'></source>
 					</video>
 
