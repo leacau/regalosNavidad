@@ -38,38 +38,7 @@
   to {opacity: 100%;}
 }
 
-.homeButton {
-  font-Size: 2rem;
-  background-Color: #61dafb;
-	padding: 1rem 2rem;
-  color: #282c34;
-  border: none;
-  border-Radius: 8px;
-  cursor: pointer;
-  animation-name: homeAparece;
-  animation-duration: 4s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  transition: 'transform 0.2s'
-}
-.homeButton {
-  font-Size: 2rem;
-  background-Color: #61dafb;
-	padding: 1rem 2rem;
-  color: #282c34;
-  border: none;
-  border-Radius: 8px;
-  cursor: pointer;
-  animation-name: homeAparece;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
 
-@keyframes homeAparece {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
-}
 
 
 .startButton:hover{
@@ -94,9 +63,10 @@
     padding: 0px;
   }
   
-  .app h1 {
+  .titleGral {
     color: #3498db; /* Color principal de Preguntados */
     margin-bottom: 20px;
+    
   }
   .opcion {
     background-color: #3498db;

@@ -14,16 +14,16 @@
 
 .premioGanButton{
   position: absolute;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  color: rgb(31, 14, 129);
   border-color:transparent ;
   height: 5vh;
   width: 50vw;
   bottom: 35%;
   padding: 20px;
   justify-content: center;
-  z-index: 2;
+  z-index: 4;
   box-shadow: #dbcaca 5px 5px 15px;
   animation-duration: 6.5s;
   animation-name: fadeIn;
@@ -68,13 +68,38 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .premioGanButton h1 {
+  .h1Title {
+    text-align: center;
     font-size: 2rem;
+      color: rgb(31, 14, 129);
+
 
 z-index: 2;
 }
   .premioGanButton h3 {
     font-size: 1.5rem;
-z-index: 2;
+z-index: 4;
 }
 
+
+
+.whatsapp {
+  margin-top: 10px;
+  align-self: center;
+  font-Size: 1.2rem;
+  width: 30%;
+  padding: 0.5rem 0.5rem;
+  background-Color: #184c5a;
+  color: #ffffff;
+  border: none;
+  border-Radius: 8px;
+  cursor: pointer;
+}
+
+.inputField{
+  margin-top: 10px;
+  align-self: center;
+  font-Size: 1.2rem;
+  width: 40%;
+z-index: 4;
+}

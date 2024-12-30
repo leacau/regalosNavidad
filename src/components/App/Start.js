@@ -252,7 +252,6 @@ function Start() {
 							borderRadius: '8px',
 							cursor: 'pointer',
 							transition: 'transform 0.2s',
-							opacity: '0',
 						}}
 						onMouseEnter={(e) => (e.target.style.transform = 'scale(1.1)')}
 						onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
@@ -277,7 +276,9 @@ function Start() {
 			)}
 			{jugar && (
 				<div className={styles.app} id='app'>
-					{respuestasCorrectas !== 3 && <h1>¿Cuánto sabés?</h1>}
+					{respuestasCorrectas !== 3 && (
+						<h1 className={styles.titleGral}>¿Cuánto sabés?</h1>
+					)}
 					{respuestasCorrectas === 3 ? (
 						<Ganador premio={40000} />
 					) : preguntaActual < preguntas.length ? (
