@@ -18,19 +18,45 @@
   display: flex;
   flex-direction: column;
   border-color:transparent ;
-  height: 5vh;
-  width: 50vw;
-  bottom: 35%;
-  padding: 20px;
+  height: 22vh;
+  width: 70vw;
+  bottom: 27%;
+  left: 11%;
+  padding: 0px;
   justify-content: center;
   z-index: 4;
   box-shadow: #dbcaca 5px 5px 15px;
   animation-duration: 6.5s;
   animation-name: fadeIn;
-  left: 20%;
   background-color: rgba(0, 255, 255, 0.39);
 
 }
+
+.ganador {
+  background-color: #2ecc71; /* Verde de ganador */
+  color: white;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h1Title {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(31, 14, 129);
+  z-index: 2;
+}
+
+.h3Text{
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  z-index: 4;
+}
+
 
 @media (min-width: 768px) {
   .premioGanButton {
@@ -38,6 +64,20 @@
     height: 30vh;
     bottom: 15%;
   }
+
+.premioGanButton{
+  height: 5vh;
+  width: 50vw;
+  bottom: 35%;
+  padding: 20px;
+}
+
+.h1Title {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(31, 14, 129);
+}
+
   
 }
 
@@ -47,45 +87,27 @@
   }
   80% {
     opacity: 0;
-    left: 18.5%;
+
   }
   90% {
     opacity: 0.5;
-    left: 19%;
+
   }
   to {
     opacity: 1;
-    left: 20%;
+
   }
 }
 
-.ganador {
-    background-color: #2ecc71; /* Verde de ganador */
-    color: white;
-    padding: 0px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .h1Title {
-    text-align: center;
-    font-size: 2rem;
-      color: rgb(31, 14, 129);
-
-
-z-index: 2;
+.waField {
+  display: flex;
+  justify-content: center;
 }
-  .premioGanButton h3 {
-    font-size: 1.5rem;
-z-index: 4;
-}
-
-
 
 .whatsapp {
-  margin-top: 10px;
-  align-self: center;
+  position: absolute;
+  bottom: 50px;
+  margin-top: 4px;
   font-Size: 1.2rem;
   width: 30%;
   padding: 0.5rem 0.5rem;
@@ -94,12 +116,19 @@ z-index: 4;
   border: none;
   border-Radius: 8px;
   cursor: pointer;
+  z-index: 4;
+  animation-duration: 6.5s;
+  animation-name: fadeIn;
 }
 
 .inputField{
-  margin-top: 10px;
+  position: absolute;
+  bottom: 100px;
+  margin-top: 5px;
   align-self: center;
   font-Size: 1.2rem;
-  width: 40%;
-z-index: 4;
+  width: 60%;
+  z-index: 4;
+  animation-duration: 6.5s;
+  animation-name: fadeIn;
 }

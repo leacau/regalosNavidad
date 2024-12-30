@@ -36,7 +36,11 @@ const Ganador = () => {
 			</div>
 			<div className={styles.premioGanButton}>
 				<h1 className={styles.h1Title}>¡Esaaaa, wachoo! ¡Ganaste!!! 🎉</h1>
-				<h3>Mandá tu CVU o alias por WhatsApp para recibir el regalo 💸 </h3>
+				<h3 className={styles.h3Text}>
+					Mandá tu CVU o alias por WhatsApp para recibir el regalo 💸
+				</h3>
+			</div>
+			<div className={styles.waField}>
 				<input
 					type='text'
 					placeholder='Ingresa tu CBU o alias'
@@ -45,7 +49,7 @@ const Ganador = () => {
 					className={styles.inputField}
 				/>
 				<button className={styles.whatsapp} onClick={handleEnviarWhatsApp}>
-					Enviar por WhatsApp
+					Enviar
 				</button>
 			</div>
 			<FireworksCanvas />
