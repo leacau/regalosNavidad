@@ -87,15 +87,12 @@
   }
   80% {
     opacity: 0;
-
   }
   90% {
     opacity: 0.5;
-
   }
   to {
     opacity: 1;
-
   }
 }
 
