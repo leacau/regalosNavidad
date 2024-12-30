@@ -27,8 +27,9 @@
   box-shadow: #dbcaca 5px 5px 15px;
   opacity: 0%;
   animation-name: aparecer;
-  animation-duration: 4s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 
 }
 
@@ -36,6 +37,40 @@
   from {opacity: 0%;}
   to {opacity: 100%;}
 }
+
+.homeButton {
+  font-Size: 2rem;
+  background-Color: #61dafb;
+	padding: 1rem 2rem;
+  color: #282c34;
+  border: none;
+  border-Radius: 8px;
+  cursor: pointer;
+  animation-name: homeAparece;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition: 'transform 0.2s'
+}
+.homeButton {
+  font-Size: 2rem;
+  background-Color: #61dafb;
+	padding: 1rem 2rem;
+  color: #282c34;
+  border: none;
+  border-Radius: 8px;
+  cursor: pointer;
+  animation-name: homeAparece;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes homeAparece {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
 
 .startButton:hover{
   background-color: hwb(0 34% 23%);
