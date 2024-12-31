@@ -172,6 +172,7 @@ function Start() {
 	const [respuestasIncorrectas, setRespuestasIncorrectas] = useState(0);
 	const [mostrarResultado, setMostrarResultado] = useState(false);
 	const [respuestaSeleccionada, setRespuestaSeleccionada] = useState(null);
+	const [participante, setParticipante] = useState('');
 	const [play, { stop }] = useSound(music, {
 		onload: () => {
 			setPlaying(true);
@@ -194,11 +195,22 @@ function Start() {
 		return mezcladas;
 	};
 
+	const preguntaPorPartic = (preguntas) => {
+		if (participante === 'jere') {
+			const preguntasMezcladas = mezclarPreguntas(preguntasData[0]);
+			setPreguntas(preguntasMezcladas);
+		} else if (participante === 'marquis') {
+			const preguntasMezcladas = mezclarPreguntas(preguntasData[1]);
+			setPreguntas(preguntasMezcladas);
+		} else {
+			const preguntasMezcladas = mezclarPreguntas(preguntasData[2]);
+			setPreguntas(preguntasMezcladas);
+		}
+	};
 	// Cargar y mezclar preguntas al inicio
 	useEffect(() => {
-		const preguntasMezcladas = mezclarPreguntas(preguntasData);
-		setPreguntas(preguntasMezcladas);
-	}, []);
+		preguntaPorPartic(preguntasData);
+	}, [participante]);
 
 	useEffect(() => {
 		if (respuestasIncorrectas === 3 || respuestasIncorrectas > 4) {
@@ -211,8 +223,7 @@ function Start() {
 				confirmButtonAriaLabel: 'nop!',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					const preguntasMezcladas = mezclarPreguntas(preguntasData);
-					setPreguntas(preguntasMezcladas);
+					preguntaPorPartic(preguntasData);
 					setRespuestasCorrectas(0);
 					setRespuestasIncorrectas(0);
 					setPreguntaActual(0);
@@ -312,25 +323,46 @@ function Start() {
 					>
 						3- No hay tres...
 					</p>
-
-					<button
-						onClick={() => setStart(true)}
-						className={styles.homeButton}
+					<select
+						onChange={(e) => setParticipante(e.target.value)}
 						style={{
-							fontSize: '2rem',
-							padding: '1rem 2rem',
-							backgroundColor: '#61dafb',
+							fontSize: '1.5rem',
+							padding: '0.5rem 2rem',
+							backgroundColor: 'white',
 							color: '#282c34',
 							border: 'none',
 							borderRadius: '8px',
 							cursor: 'pointer',
 							transition: 'transform 0.2s',
+							marginBottom: '1rem',
 						}}
-						onMouseEnter={(e) => (e.target.style.transform = 'scale(1.1)')}
-						onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
 					>
-						¡Iniciar!
-					</button>
+						<option value=''>¿Quién va a jugar?</option>
+						<option value='jere'>Jere</option>
+						<option value='marquis'>Marquis</option>
+						<option value='otro'>Otro</option>
+					</select>
+
+					{participante !== '' && (
+						<button
+							onClick={() => setStart(true)}
+							className={styles.homeButton}
+							style={{
+								fontSize: '2rem',
+								padding: '1rem 2rem',
+								backgroundColor: '#61dafb',
+								color: '#282c34',
+								border: 'none',
+								borderRadius: '8px',
+								cursor: 'pointer',
+								transition: 'transform 0.2s',
+							}}
+							onMouseEnter={(e) => (e.target.style.transform = 'scale(1.1)')}
+							onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
+						>
+							¡Iniciar!
+						</button>
+					)}
 				</div>
 			)}
 			{!jugar && start && (
@@ -353,7 +385,7 @@ function Start() {
 						<h1 className={styles.titleGral}>¿Cuánto sabés?</h1>
 					)}
 					{respuestasCorrectas === 3 ? (
-						<Ganador premio={40000} />
+						<Ganador participante={participante} />
 					) : preguntaActual < preguntas.length ? (
 						<>
 							<Pregunta

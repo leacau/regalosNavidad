@@ -1,4 +1,4 @@
-[
+[[
   {
     "pregunta": "¿Qué teorema relaciona la frecuencia de muestreo con la máxima frecuencia reproducible?",
     "respuestas": ["Teorema de Pitágoras", "Teorema de Nyquist-Shannon", "Ley de Ohm", "Transformada de Fourier"],
@@ -98,5 +98,715 @@
     "pregunta": "¿Qué se busca lograr principalmente con la masterización de un audio?",
     "respuestas": ["Grabar las pistas individuales", "Mezclar las pistas", "Optimizar el audio para su distribución final", "Afinar los instrumentos"],
     "correcta": 2
-  }
+  },{
+    "pregunta": "¿Qué instrumento se utiliza comúnmente para controlar sintetizadores a través de MIDI?",
+    "respuestas": ["Controlador MIDI", "Micrófono dinámico", "Ecualizador paramétrico", "Interfaz de audio"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué se logra al usar un filtro de paso bajo en un sonido?",
+    "respuestas": ["Eliminar frecuencias altas", "Reducir la latencia", "Aumentar la amplitud", "Eliminar frecuencias bajas"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué efecto crea una sensación de movimiento espacial en un sonido?",
+    "respuestas": ["Compresión", "Overdrive", "Paneo", "Reverberación"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál es la principal ventaja de usar síntesis modular?",
+    "respuestas": ["Flexibilidad y personalización", "Sonidos preconfigurados", "Portabilidad", "Menor complejidad"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué herramienta es esencial para grabar sonidos ambientales en alta calidad?",
+    "respuestas": ["Sintetizador analógico", "Procesador de dinámica", "Controlador MIDI", "Micrófono de condensador"],
+    "correcta": 3
+  },
+  {
+    "pregunta": "¿Qué parámetro de un oscilador define la forma de la onda?",
+    "respuestas": ["Amplitud", "Frecuencia", "Filtro", "Forma de onda"],
+    "correcta": 3
+  },
+  {
+    "pregunta": "¿Qué técnica se utiliza para crear sonidos armónicos complejos combinando ondas simples?",
+    "respuestas": ["Síntesis granular", "Síntesis wavetable", "Síntesis aditiva", "Síntesis FM"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué se usa para convertir una señal analógica en digital?",
+    "respuestas": ["Conversor A/D", "Oscilador", "Filtro de paso alto", "Controlador MIDI"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué técnica de composición implica manipular fragmentos grabados de audio?",
+    "respuestas": ["Síntesis aditiva", "Música concreta", "Síntesis wavetable", "Síntesis granular"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es el rango dinámico en audio?",
+    "respuestas": ["La diferencia entre los sonidos más suaves y más fuertes", "El tiempo de duración de un sonido", "La amplitud de la onda sonora", "La diferencia entre las frecuencias más bajas y más altas"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué herramienta es útil para reducir el ruido en una grabación?",
+    "respuestas": ["Limitador", "Puerta de ruido", "Compresor", "Reverberación"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de síntesis utiliza modulaciones de fase para generar sonidos?",
+    "respuestas": ["Síntesis FM", "Síntesis granular", "Síntesis sustractiva", "Síntesis wavetable"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué software es conocido por su enfoque en la composición electroacústica?",
+    "respuestas": ["Sibelius", "Finale", "Max/MSP", "Photoshop"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué parámetro afecta la rapidez con la que un sonido alcanza su volumen máximo?",
+    "respuestas": ["Attack", "Decay", "Sustain", "Release"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de micrófono es más adecuado para grabar sonidos en exteriores?",
+    "respuestas": ["Micrófono dinámico", "Micrófono de cinta", "Micrófono piezoeléctrico", "Micrófono shotgun"],
+    "correcta": 3
+  },
+  {
+    "pregunta": "¿Qué herramienta permite modificar las frecuencias específicas de un sonido?",
+    "respuestas": ["Delay", "Ecualizador", "Filtro", "Compresor"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es la modulación de amplitud (AM) en audio?",
+    "respuestas": ["Variar la amplitud de una señal con otra", "Reducir el ruido de fondo", "Modificar la frecuencia de una onda", "Combinar dos señales armónicas"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué efecto se utiliza para crear ecos repetitivos en un sonido?",
+    "respuestas": ["Delay", "Chorus", "Flanger", "Reverberación"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué característica diferencia a un sintetizador analógico de uno digital?",
+    "respuestas": ["Generación de señales mediante circuitos eléctricos", "Mayor precisión en el sonido", "Uso exclusivo de software", "Capacidad de muestreo más alta"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué proceso aumenta el volumen general de una pista sin distorsionar?",
+    "respuestas": ["Compresión", "Ecualización", "Reverberación", "Limitador"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es la espacialización en música electroacústica?",
+    "respuestas": ["La distribución de sonidos en un entorno tridimensional", "La reducción de ruidos ambientales", "La amplificación de frecuencias específicas", "El uso de reverberación para simular espacios"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué técnica utiliza ruido blanco para esculpir un sonido específico?",
+    "respuestas": ["Síntesis wavetable", "Síntesis granular", "Síntesis sustractiva", "Síntesis aditiva"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué se consigue con la automatización en un DAW?",
+    "respuestas": ["Grabar MIDI directamente", "Reducir el uso de plugins", "Controlar parámetros en tiempo real durante la reproducción", "Aumentar la calidad de grabación"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué tipo de efecto modifica el tono de una señal?",
+    "respuestas": ["Pitch shifter", "Ecualizador", "Chorus", "Compresor"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es un LFO (Low Frequency Oscillator) en síntesis?",
+    "respuestas": ["Una onda sonora de alta frecuencia", "Un modulador de baja frecuencia para controlar parámetros", "Un filtro de paso alto", "Un tipo de compresor"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué técnica de grabación se utiliza para sonidos binaurales?",
+    "respuestas": ["Micrófonos estéreo tradicionales", "Micrófonos binaurales", "Micrófonos de condensador", "Micrófonos dinámicos"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un oscilador en un sintetizador?",
+    "respuestas": ["Un secuenciador de patrones", "Un efecto de audio", "Un filtro de frecuencias", "Una fuente de señal que genera ondas sonoras"],
+    "correcta": 3
+  },
+  {
+    "pregunta": "¿Qué efecto crea modulaciones rápidas en el tono de una señal?",
+    "respuestas": ["Tremolo", "Flanger", "Vibrato", "Delay"],
+    "correcta": 2
+  },
+  {
+    "pregunta": "¿Qué significa sample rate en audio digital?",
+    "respuestas": ["La cantidad de muestras por segundo en una grabación", "La calidad de los efectos aplicados", "El tamaño del archivo de audio", "La duración de un sonido grabado"],
+    "correcta": 0
+  },
+  {
+    "pregunta": "¿Qué componente se utiliza para controlar el flujo de señal en síntesis modular?",
+    "respuestas": ["Un oscilador", "Un enrutador", "Un filtro", "Un amplificador"],
+    "correcta": 1
+  }],
+
+
+  [
+    {
+      "pregunta": "¿Qué es la rotación de cultivos?",
+      "respuestas": ["El cambio periódico de cultivos en un mismo terreno", "El uso de un solo cultivo todo el año", "El cultivo de varias especies al mismo tiempo", "La eliminación de malezas con herbicidas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es el principal objetivo de un análisis de suelo?",
+      "respuestas": ["Determinar el nivel de compactación", "Calcular el tamaño de las partículas del suelo", "Medir la cantidad de agua en el suelo", "Identificar la cantidad de nutrientes disponibles"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué es la siembra directa?",
+      "respuestas": ["La siembra realizada manualmente", "El uso exclusivo de fertilizantes orgánicos", "La siembra realizada en suelos inundados", "El uso de maquinaria sin labranza previa"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuál es el principal objetivo del control biológico?",
+      "respuestas": ["Eliminar todas las plagas", "Controlar plagas mediante el uso de enemigos naturales", "Aumentar la población de plagas para estudiar su comportamiento", "Eliminar la necesidad de rotación de cultivos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es el pH del suelo?",
+      "respuestas": ["La capacidad de retención de nutrientes", "La medida de acidez o alcalinidad del suelo", "La cantidad de materia orgánica en el suelo", "El nivel de agua disponible en el suelo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de cultivo es más adecuado para suelos arenosos?",
+      "respuestas": ["Maní", "Soja", "Arroz", "Maíz"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué factor es crucial para determinar la capacidad de carga en un sistema ganadero?",
+      "respuestas": ["La disponibilidad de pasto", "La cantidad de agua disponible", "La fertilidad del suelo", "El tipo de ganado"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué significa el concepto de \"sostenibilidad\" en agricultura?",
+      "respuestas": ["Evitar el uso de fertilizantes químicos", "Producir exclusivamente para exportación", "Mantener un equilibrio entre productividad, medio ambiente y sociedad", "Maximizar la producción sin importar los costos"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de los fertilizantes nitrogenados?",
+      "respuestas": ["Controlar plagas", "Estimular el crecimiento vegetativo de las plantas", "Retener agua en el suelo", "Aumentar el pH del suelo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es el compostaje?",
+      "respuestas": ["El almacenamiento de fertilizantes químicos", "El uso de maquinaria para arar la tierra", "La quema de residuos agrícolas", "El proceso de descomposición controlada de materia orgánica"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué son los cultivos de cobertura?",
+      "respuestas": ["Cultivos resistentes a las plagas", "Cultivos que protegen el suelo y mejoran su calidad", "Cultivos que requieren poca agua", "Cultivos que se utilizan solo para la cosecha"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué herramienta se utiliza para medir la humedad del suelo?",
+      "respuestas": ["Tensiómetro", "Barómetro", "Fotómetro", "Higrómetro"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué tipo de riego utiliza agua a baja presión y aplica directamente en las raíces?",
+      "respuestas": ["Riego por aspersión", "Riego por goteo", "Riego por inundación", "Riego por surcos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es la labranza cero?",
+      "respuestas": ["El cultivo sin remover el suelo", "El uso de fertilizantes líquidos", "La siembra en suelos salinos", "El uso de maquinaria pesada para arar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué caracteriza a un suelo arcilloso?",
+      "respuestas": ["Rápido drenaje", "Alta porosidad", "Alta retención de agua", "Baja retención de nutrientes"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el principal beneficio de los sistemas de rotación pastoreo?",
+      "respuestas": ["Aumentar la compactación del suelo", "Reducir la población de animales", "Eliminar la necesidad de suplementos alimenticios", "Controlar el sobrepastoreo y mejorar la calidad del pasto"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué significa la sigla OGM en el contexto agropecuario?",
+      "respuestas": ["Organización Global de Maquinaria", "Organismos Germinativos Modulares", "Organismos Genéticamente Modificados", "Organismos Ganaderos Mixtos"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué es el ensilaje?",
+      "respuestas": ["El almacenamiento de forraje en condiciones anaeróbicas", "El transporte de fertilizantes químicos", "La técnica de riego intensivo", "El proceso de secado de granos"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué factor es determinante para evitar la erosión del suelo?",
+      "respuestas": ["Compactación del suelo", "Riego continuo", "Uso de fertilizantes químicos", "Cobertura vegetal adecuada"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué es la agricultura de precisión?",
+      "respuestas": ["El empleo de tecnologías avanzadas para optimizar recursos y rendimiento", "El uso de maquinaria antigua para optimizar costos", "El cultivo en suelos pobres sin fertilizantes", "La utilización exclusiva de cultivos tradicionales"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué cuidados básicos requieren las vacas lecheras?",
+      "respuestas": ["Un ambiente limpio, alimentación balanceada y chequeos de salud", "Solo acceso a agua potable", "Corte de pezuñas semanal", "Un refugio cerrado las 24 horas del día"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la finalidad de las vacunas en los animales de granja?",
+      "respuestas": ["Aumentar el tamaño del animal", "Prevenir enfermedades infecciosas", "Hacer que los animales produzcan más leche", "Acelerar el engorde del animal"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué alimento es esencial para la alimentación de las aves de corral?",
+      "respuestas": ["Soja", "Maíz", "Harina de pescado", "Trigo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué se utiliza para identificar ganado en grandes explotaciones?",
+      "respuestas": ["Collares con GPS", "Caravanas o marcas auriculares", "Colores pintados en el lomo", "Pequeñas incisiones en las orejas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se controla la calidad de la leche en la producción lechera?",
+      "respuestas": ["Midiendo su acidez y nivel de grasa", "Solo verificando su color", "Evitando el contacto con maquinaria", "Agregando conservantes durante el ordeñe"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la principal función de la suplementación alimenticia en ganado bovino?",
+      "respuestas": ["Mejorar la calidad del suelo", "Aumentar la producción de carne o leche", "Reducir el estrés por calor", "Evitar enfermedades respiratorias"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es el destete precoz en ganado?",
+      "respuestas": ["Reducir el peso del ternero", "Aumentar la producción de leche", "Mejorar la fertilidad de las vacas", "Separar al ternero de la madre antes de lo habitual"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuál es el objetivo principal de la inseminación artificial?",
+      "respuestas": ["Controlar enfermedades", "Mejorar la genética del ganado", "Evitar el sobrepastoreo", "Reducir el uso de maquinaria"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es el forraje verde hidropónico?",
+      "respuestas": ["Un tipo de fertilizante", "Un sistema de riego intensivo", "Un suplemento mineral para ganado", "Forraje cultivado sin suelo"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué tipo de vacuna es esencial para prevenir enfermedades clostridiales en ganado?",
+      "respuestas": ["Vacuna contra el moquillo", "Vacuna contra la fiebre aftosa", "Vacuna polivalente", "Vacuna contra la brucelosis"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué característica debe tener el agua para el ganado?",
+      "respuestas": ["Alta salinidad", "Estar a alta temperatura", "Contener restos orgánicos", "Ser fresca, limpia y accesible"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué significa el término \"rumiantes\"?",
+      "respuestas": ["Animales que mastican varias veces su alimento", "Animales que no tienen dientes", "Animales que viven en climas áridos", "Animales que no necesitan agua"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué técnica se utiliza para evitar el estrés por calor en el ganado?",
+      "respuestas": ["Administrar antibióticos", "Proveer sombra y agua fresca", "Aumentar la cantidad de alimento", "Reducir la cantidad de animales"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué significa el término \"ganadería intensiva\"?",
+      "respuestas": ["El transporte frecuente de animales entre zonas", "El uso exclusivo de animales para carne", "El uso de grandes extensiones de tierra para el pastoreo", "La cría de animales en espacios reducidos con alimentación controlada"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuál es una de las principales ventajas del pastoreo rotacional?",
+      "respuestas": ["Mejorar la calidad del pasto y evitar su degradación", "Evitar la necesidad de agua potable", "Aumentar la cantidad de animales por hectárea", "Reducir el costo de vacunación"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es un silo bolsa?",
+      "respuestas": ["Un sistema de almacenamiento hermético para forraje", "Un tipo de riego para pasturas", "Un método para fertilizar cultivos", "Un equipo para transporte de animales"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la principal función de la melaza en la alimentación animal?",
+      "respuestas": ["Incrementar la fertilidad", "Proveer proteínas", "Aportar energía y mejorar la palatabilidad del alimento", "Reducir enfermedades digestivas"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué enfermedad se previene con la vacunación contra la fiebre aftosa?",
+      "respuestas": ["Clostridiosis", "Fiebre aftosa", "Brucelosis", "Paratuberculosis"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es el periodo seco en las vacas lecheras?",
+      "respuestas": ["El tiempo en que no se alimentan con concentrados", "El tiempo en que se reduce la cantidad de agua que beben", "El tiempo en el que no se ordeñan para permitir la regeneración de la glándula mamaria", "El periodo de gestación"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué herramienta se utiliza para determinar el peso aproximado de un animal?",
+      "respuestas": ["Balanza", "Cortaúñas", "Cinta métrica", "Cinta de pesar"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué es la trazabilidad animal?",
+      "respuestas": ["El seguimiento de los animales desde su nacimiento hasta el consumo", "El proceso de vacunación del ganado", "El registro del peso de los animales", "La medición de la productividad del pasto"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué tipo de alimentación es ideal para vacas lecheras de alta producción?",
+      "respuestas": ["Solo pasto", "Solo ensilaje", "Granos exclusivamente", "Raciones balanceadas con alto contenido energético"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué enfermedad afecta principalmente a los cascos del ganado?",
+      "respuestas": ["Pododermatitis", "Brucelosis", "Mastitis", "Diarrea"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué significa el término \"desparasitación\"?",
+      "respuestas": ["Eliminar parásitos internos y externos del ganado", "Aumentar la ingesta de minerales", "Evitar el apareamiento en épocas no deseadas", "Vacunar contra enfermedades bacterianas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es un rodeo en ganadería?",
+      "respuestas": ["Un tipo de vacuna para bovinos", "El conjunto de animales de una explotación ganadera", "Un sistema de manejo de pasturas", "Un sistema de riego"],
+      "correcta": 1
+    }
+  ],  
+  [
+    {
+      "pregunta": "¿Quién pintó la Mona Lisa?",
+      "respuestas": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Salvador Dalí"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿En qué país se originó el tango?",
+      "respuestas": ["Brasil", "Argentina", "Uruguay", "Chile"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es el río más largo del mundo?",
+      "respuestas": ["Nilo", "Yangtsé", "Misisipi", "Amazonas"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Quién escribió 'Cien años de soledad'?",
+      "respuestas": ["Mario Vargas Llosa", "Gabriel García Márquez", "Jorge Luis Borges", "Julio Cortázar"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué continente se encuentra Egipto?",
+      "respuestas": ["Asia", "Europa", "África", "América"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué planeta es conocido como el 'planeta rojo'?",
+      "respuestas": ["Marte", "Venus", "Saturno", "Júpiter"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuántos continentes existen en el mundo?",
+      "respuestas": ["6", "7", "5", "8"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué año llegó el hombre a la luna?",
+      "respuestas": ["1969", "1959", "1989", "1979"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Quién fue el primer presidente de los Estados Unidos?",
+      "respuestas": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el animal terrestre más grande del mundo?",
+      "respuestas": ["Elefante africano", "Rinoceronte blanco", "Jirafa", "Ballena azul"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la capital de España?",
+      "respuestas": ["Sevilla", "Valencia", "Barcelona", "Madrid"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuántos colores tiene el arco iris?",
+      "respuestas": ["6", "7", "8", "5"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+      "respuestas": ["1918", "1914", "1939", "1912"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué escritor creó el personaje de Sherlock Holmes?",
+      "respuestas": ["Arthur Conan Doyle", "Agatha Christie", "Edgar Allan Poe", "J.K. Rowling"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué elemento químico tiene el símbolo O?",
+      "respuestas": ["Osmio", "Oxígeno", "Oro", "Ocenio"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Quién fue el pintor del Guernica?",
+      "respuestas": ["Diego Rivera", "Salvador Dalí", "Pablo Picasso", "Frida Kahlo"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué océano es el más grande del planeta?",
+      "respuestas": ["Atlántico", "Ártico", "Pacífico", "Índico"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué país tiene el mayor número de habitantes?",
+      "respuestas": ["India", "China", "Indonesia", "Estados Unidos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué instrumento musical tiene teclas negras y blancas?",
+      "respuestas": ["Batería", "Guitarra", "Flauta", "Piano"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Quién fue el primer emperador de China?",
+      "respuestas": ["Han Wudi", "Emperador Yongle", "Qin Shi Huang", "Gaozu de Han"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué tipo de animal es un delfín?",
+      "respuestas": ["Peces", "Mamífero", "Reptil", "Aves"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la lengua más hablada del mundo?",
+      "respuestas": ["Mandarín", "Español", "Inglés", "Hindi"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es el sol?",
+      "respuestas": ["Una estrella", "Un satélite", "Un planeta", "Un asteroide"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Quién fue el líder de la Revolución Francesa?",
+      "respuestas": ["Marat", "Napoleón Bonaparte", "Maximilien Robespierre", "Luis XVI"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el continente más grande?",
+      "respuestas": ["América", "Asia", "África", "Europa"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "respuestas": ["Lyon", "Valencia", "Marsella", "París"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué animal es el símbolo de Australia?",
+      "respuestas": ["Koala", "Canguro", "Dingo", "Emú"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué deporte es conocido como 'el rey de los deportes'?",
+      "respuestas": ["Baloncesto", "Tenis", "Fútbol", "Béisbol"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el principal ingrediente del guacamole?",
+      "respuestas": ["Tomate", "Cebolla", "Aguacate", "Limón"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué es la 'mona' en cultura argentina?",
+      "respuestas": ["Un tipo de baile", "Un pastel tradicional", "Un carnaval", "Un tipo de animal"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué figura es el resultado de la intersección de dos rectas?",
+      "respuestas": ["Un ángulo", "Un punto", "Un triángulo", "Un círculo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de animal es una medusa?",
+      "respuestas": ["Invertebrado", "Pez", "Mamífero", "Reptil"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿En qué continente está el desierto del Sahara?",
+      "respuestas": ["Asia", "América", "Australia", "África"],
+      "correcta": 3
+    }, {
+      "pregunta": "¿Qué instrumento musical se toca con un arco?",
+      "respuestas": ["Piano", "Flauta", "Guitarra", "Violín"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuál es el océano más pequeño del mundo?",
+      "respuestas": ["Atlántico", "Índico", "Ártico", "Pacífico"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Quién pintó 'La noche estrellada'?",
+      "respuestas": ["Claude Monet", "Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿En qué país se encuentra la Gran Muralla?",
+      "respuestas": ["México", "Japón", "China", "India"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué animal es conocido por cambiar de color?",
+      "respuestas": ["León", "Cebra", "Camaleón", "Gato"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Italia?",
+      "respuestas": ["Venecia", "Milán", "Roma", "Florencia"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué nombre recibe la mezcla de agua y tierra?",
+      "respuestas": ["Arena", "Lodo", "Grava", "Arcilla"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué gas es el más abundante en la atmósfera terrestre?",
+      "respuestas": ["Dióxido de carbono", "Oxígeno", "Helio", "Nitrógeno"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué continente es el más pequeño del mundo?",
+      "respuestas": ["Europa", "Antártida", "Oceanía", "Asia"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué metal es líquido a temperatura ambiente?",
+      "respuestas": ["Oro", "Mercurio", "Hierro", "Plomo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué país nació el célebre escritor William Shakespeare?",
+      "respuestas": ["Italia", "Francia", "Inglaterra", "Alemania"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es la moneda oficial de Japón?",
+      "respuestas": ["Yuan", "Ringgit", "Won", "Yen"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿En qué continente se encuentran las pirámides de Egipto?",
+      "respuestas": ["América", "Asia", "África", "Europa"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Quién escribió '1984'?",
+      "respuestas": ["Harper Lee", "Ray Bradbury", "Aldous Huxley", "George Orwell"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué ciudad es conocida como 'La ciudad del amor'?",
+      "respuestas": ["Venecia", "Roma", "París", "Madrid"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el animal más rápido del mundo?",
+      "respuestas": ["Águila", "León", "Tigre", "Guepardo"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué gas es responsable del efecto invernadero?",
+      "respuestas": ["Oxígeno", "Dióxido de carbono", "Helio", "Nitrógeno"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Quién inventó la bombilla eléctrica?",
+      "respuestas": ["Nikola Tesla", "Albert Einstein", "Alexander Graham Bell", "Thomas Edison"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué famoso pintor sufrió de psicosis y fue internado en un hospital psiquiátrico?",
+      "respuestas": ["Pablo Picasso", "Frida Kahlo", "Vincent van Gogh", "Claude Monet"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el país con mayor número de islas?",
+      "respuestas": ["Indonesia", "Maldivas", "Filipinas", "Suecia"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué órgano del cuerpo humano produce insulina?",
+      "respuestas": ["Riñón", "Páncreas", "Hígado", "Estómago"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué país es conocido como la 'Tierra del Sol Naciente'?",
+      "respuestas": ["Vietnam", "China", "Japón", "Corea del Sur"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué animal es el más grande del planeta?",
+      "respuestas": ["Elefante africano", "Jirafa", "Ballena azul", "Rinoceronte blanco"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿En qué año terminó la Segunda Guerra Mundial?",
+      "respuestas": ["1945", "1950", "1939", "1965"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué actor interpretó a 'Jack' en la película Titanic?",
+      "respuestas": ["Johnny Depp", "Tom Hanks", "Brad Pitt", "Leonardo DiCaprio"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Quién es conocido como el 'Padre de la Historia'?",
+      "respuestas": ["Aristóteles", "Sócrates", "Platón", "Heródoto"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué tipo de instrumento es una trompeta?",
+      "respuestas": ["Teclado", "Percusión", "Cuerda", "Viento"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué país es famoso por su carnaval en Río de Janeiro?",
+      "respuestas": ["Brasil", "México", "Colombia", "Argentina"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué tipo de animal es una tortuga?",
+      "respuestas": ["Reptil", "Pez", "Pájaro", "Mamífero"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué artista pintó el techo de la Capilla Sixtina?",
+      "respuestas": ["Leonardo da Vinci", "Donatello", "Michelangelo", "Rafael"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Quién descubrió la teoría de la relatividad?",
+      "respuestas": ["Isaac Newton", "Nikola Tesla", "Max Planck", "Albert Einstein"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Qué ciudad es conocida como 'La ciudad eterna'?",
+      "respuestas": ["Venecia", "París", "Roma", "Atenas"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿En qué continente se encuentra el desierto de Atacama?",
+      "respuestas": ["África", "Oceanía", "Asia", "América del Sur"],
+      "correcta": 3
+    }
+  ]
+  
 ]
