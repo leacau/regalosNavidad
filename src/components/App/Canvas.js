@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const FireworksCanvas = () => {
 	const canvasRef = useRef(null);
+	const enVista = document.visibilityState;
 
 	useEffect(() => {
 		const canvas = canvasRef.current;
@@ -18,7 +19,7 @@ const FireworksCanvas = () => {
 			'#ff69b4',
 			'#ffa500',
 		];
-		const gravity = 0.05; // Gravedad
+		const gravity = 1.5; // Gravedad
 		const bounce = 0.6; // Factor de rebote
 
 		// Crear un grupo de partículas para simular un fuego artificial
@@ -113,7 +114,7 @@ const FireworksCanvas = () => {
 		};
 
 		// Lanzar fuegos artificiales automáticamente
-		const interval = setInterval(launchFirework, 500);
+		const interval = setInterval(launchFirework, 900);
 
 		loop();
 

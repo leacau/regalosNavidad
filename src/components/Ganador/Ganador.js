@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import FireworksCanvas from '../App/Canvas';
 import fireworkSound from '../../assets/audios/fireworks.mp3';
@@ -9,7 +9,12 @@ import useSound from 'use-sound';
 const Ganador = () => {
 	const [play, { stop, isPlaying }] = useSound(fireworkSound);
 	const [cbuAlias, setCbuAlias] = useState(''); // Estado para capturar el CBU o alias
+	const [enVista, setEnVista] = useState(''); // Estado para capturar el CBU o alias
 
+	useEffect(() => {
+		setEnVista(document.visibilityState);
+		console.log(enVista);
+	}, [enVista]);
 	const handleEnviarWhatsApp = () => {
 		if (cbuAlias.trim() === '') {
 			alert('Por favor, ingresa tu CBU o alias');

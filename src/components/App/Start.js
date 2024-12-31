@@ -152,9 +152,11 @@ import React, { useEffect, useState } from 'react';
 import Ganador from '../Ganador/Ganador';
 import Pregunta from '../Pregunta/Pregunta';
 import Resultado from '../Resultado/Resultado';
+import Swal from 'sweetalert2';
 import error from '../../assets/audios/error.mp3';
 import good from '../../assets/audios/good.mp3';
 import music from '../../assets/audios/musicStart.ogg';
+import noVideo from '../../assets/videos/no.gif';
 import preguntasData from '../../json/preguntas.json'; // Importa las preguntas
 import startVideo from '../../assets/videos/start.mp4';
 import styles from './App.module.css';
@@ -167,6 +169,7 @@ function Start() {
 	const [start, setStart] = useState(false);
 	const [playing, setPlaying] = useState(false);
 	const [respuestasCorrectas, setRespuestasCorrectas] = useState(0);
+	const [respuestasIncorrectas, setRespuestasIncorrectas] = useState(0);
 	const [mostrarResultado, setMostrarResultado] = useState(false);
 	const [respuestaSeleccionada, setRespuestaSeleccionada] = useState(null);
 	const [play, { stop }] = useSound(music, {
@@ -198,6 +201,28 @@ function Start() {
 	}, []);
 
 	useEffect(() => {
+		if (respuestasIncorrectas === 3 || respuestasIncorrectas > 4) {
+			Swal.fire({
+				title: '<strong>mmmmmmm</strong>',
+				html: `<img src=${noVideo}/>`,
+				focusConfirm: false,
+				confirmButtonText: '<i class="fa fa-thumbs-up"></i> Volver a empezar!',
+				confirmButtonColor: '#a1594a',
+				confirmButtonAriaLabel: 'nop!',
+			}).then((result) => {
+				if (result.isConfirmed) {
+					const preguntasMezcladas = mezclarPreguntas(preguntasData);
+					setPreguntas(preguntasMezcladas);
+					setRespuestasCorrectas(0);
+					setRespuestasIncorrectas(0);
+					setPreguntaActual(0);
+					siguientePregunta();
+				}
+			});
+		}
+	}, [respuestasIncorrectas]);
+
+	useEffect(() => {
 		if (playing && !jugar) {
 			play();
 		}
@@ -208,6 +233,8 @@ function Start() {
 		setMostrarResultado(true);
 		if (indice === preguntas[preguntaActual].correcta) {
 			setRespuestasCorrectas(respuestasCorrectas + 1);
+		} else {
+			setRespuestasIncorrectas(respuestasIncorrectas + 1);
 		}
 	};
 
@@ -234,12 +261,58 @@ function Start() {
 				<div
 					style={{
 						display: 'flex',
+						flexDirection: 'column',
 						justifyContent: 'center',
 						alignItems: 'center',
 						height: '100vh',
 						backgroundColor: '#282c34',
 					}}
 				>
+					<h3
+						style={{
+							color: 'red',
+							fontSize: '1.7rem',
+						}}
+					>
+						Atención, esto no va a ser facil...
+					</h3>
+					<p
+						style={{
+							color: 'White',
+							fontSize: '1.5rem',
+						}}
+					>
+						Condiciones:
+					</p>
+					<p
+						style={{
+							color: '#d8b336',
+							fontSize: '1.5rem',
+							margin: '0',
+						}}
+					>
+						1- Con tres respuestas correctas, GANAS!
+					</p>
+					<p
+						style={{
+							color: '#d8b336',
+							fontSize: '1.5rem',
+							margin: '0',
+						}}
+					>
+						2- Con tres respuestas incorrectas, EMPEZAS DE NUEVO!
+					</p>
+					<p
+						style={{
+							color: '#d8b336',
+							fontSize: '1.5rem',
+							marginTop: '0',
+							marginBottom: '2rem',
+						}}
+					>
+						3- No hay tres...
+					</p>
+
 					<button
 						onClick={() => setStart(true)}
 						className={styles.homeButton}
@@ -297,6 +370,12 @@ function Start() {
 									siguientePregunta={siguientePregunta}
 								/>
 							)}
+							<div className={styles.correcto}>
+								Respuestas correctas: {respuestasCorrectas}
+							</div>
+							<div className={styles.incorrecto}>
+								Respuestas incorrectas: {respuestasIncorrectas}
+							</div>
 						</>
 					) : (
 						<p>
